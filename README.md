@@ -1,8 +1,8 @@
 
 ## calcFinal
 This is a basic calculator application that performs basic mathematical operations like:
-+ **Addition**
-+ **Subtraction**
++ •Addition•
++ *Subtraction*
 + Multiplication
 + Division
 
