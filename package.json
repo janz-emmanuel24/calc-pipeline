@@ -1,0 +1,32 @@
+{
+  "name": "programcalculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "npx mocha \"tests/apiTest.js\" --timeout 10000",
+    "lint:fix": "eslint --fix ./*.js",
+    "start": "nodemon app.js"
+  },
+  "author": "Group-3",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.21"
+  },
+  "dependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.21.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "pug": "^3.0.2",
+    "winston": "^3.8.2"
+  }
+}
