@@ -7,6 +7,9 @@ pipeline {
     DOCKERHUB_CREDENTIALS = credentials('dockerhub')
   }
   stages {
+    stage('Checkout') {
+      sh 'echo Checkout some stage'
+    }
     stage('Build') {
       steps {
         sh 'docker build -t jnz4/jenkins-docker-hub .'
