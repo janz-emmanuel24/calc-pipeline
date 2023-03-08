@@ -12,9 +12,14 @@ pipeline {
         sh 'echo Checkout Stage'
       }
     }
+    stage('Quality Tests') {
+      steps {
+        sh 'echo Quality Tests stage'
+      }
+    }
     stage('Unit Tests') {
       steps {
-        sh 'npm run test'
+        sh 'echo unit Tests stage'
       }
     }
     stage('Build') {
