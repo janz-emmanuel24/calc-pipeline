@@ -39,6 +39,7 @@ pipeline {
     }
     stage('Run Docker container on remote hosts') {
       steps {
+        sh "docker stop new-devsOpsT && docker rm new-devsOpsT || true"
         sh "docker run -d --name new-devsOpsT -p 9100:3000 jnz4/jenkins-docker-hub"
       }
     }
