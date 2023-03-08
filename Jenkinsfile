@@ -8,7 +8,14 @@ pipeline {
   }
   stages {
     stage('Checkout') {
-      sh 'echo Checkout some stage'
+      steps {
+        sh 'echo Checkout Stage'
+      }
+    }
+    stage('Unit Tests') {
+      steps {
+        sh 'npm run test'
+      }
     }
     stage('Build') {
       steps {
