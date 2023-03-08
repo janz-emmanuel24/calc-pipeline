@@ -22,6 +22,11 @@ pipeline {
         sh 'docker push jnz4/jenkins-docker-hub'
       }
     }
+    stage('Run Docker container on remote hosts') {
+      steps {
+        sh "docker -H ssh://root@170.187.202.21 run -d -p 8000:3000 jnz4/jenkins-docker-hub"
+      }
+    }
   }
   post {
     always {
